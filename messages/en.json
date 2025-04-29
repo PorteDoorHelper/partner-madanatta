@@ -1,0 +1,117 @@
+{
+  "header": {
+    "title": "DoorPartner",
+    "benefits": "Benefits",
+    "storefront": "Storefront",
+    "dashboard": "Dashboard",
+    "contact": "Contact",
+    "becomeDealer": "Become a Dealer"
+  },
+  "hero": {
+    "title": "Become a Premium Interior Door Dealer in Canada",
+    "subtitle": "Get a ready-to-use branded online store without technical maintenance",
+    "startPartnership": "Start Partnership",
+    "viewDemo": "View Demo"
+  },
+  "benefits": {
+    "title": "Dealership Benefits",
+    "subtitle": "We offer a completely ready solution for your business",
+    "brandedStorefront": {
+      "title": "Branded Storefront",
+      "description": "Fully customized catalog or online store with your logo and contact information"
+    },
+    "salesAutomation": {
+      "title": "Sales Automation",
+      "description": "Customers can make purchases online without your involvement in site maintenance"
+    },
+    "analyticalDashboard": {
+      "title": "Analytical Dashboard",
+      "description": "Track sales, views, and other important statistics in real-time"
+    },
+    "whatYouGet": "What You Get",
+    "benefits": {
+      "readyStore": "Ready-to-use online store",
+      "branding": "Branding for your business",
+      "support": "24/7 technical support",
+      "catalogUpdates": "Regular catalog updates",
+      "marketingMaterials": "Marketing materials",
+      "staffTraining": "Staff training",
+      "analyticalDashboard": "Analytical dashboard",
+      "crmIntegration": "CRM system integration"
+    }
+  },
+  "storefront": {
+    "title": "Your Personal Storefront",
+    "subtitle": "Choose the format that suits you",
+    "productCatalog": {
+      "title": "Product Catalog",
+      "description": "Informative catalog with detailed descriptions of all door models, materials, and finishing options",
+      "viewDemo": "View Catalog Demo"
+    },
+    "onlineStore": {
+      "title": "Online Store",
+      "description": "Complete online store with online ordering, payment, and delivery tracking",
+      "viewDemo": "View Store Demo"
+    },
+    "personalization": {
+      "title": "Personalization",
+      "description": "Each storefront is individually customized for your brand:",
+      "logo": "Your logo and brand colors",
+      "contactInfo": "Your contact information",
+      "promotions": "Individual promotions and offers",
+      "regionalFeatures": "Regional features and prices"
+    }
+  },
+  "dashboard": {
+    "title": "Analytical Dashboard",
+    "subtitle": "Complete control over your business",
+    "salesStatistics": {
+      "title": "Sales Statistics",
+      "description": "Track sales in real-time, analyze trends and seasonality"
+    },
+    "customerBehavior": {
+      "title": "Customer Behavior",
+      "description": "Find out which door models are viewed most often and what influences the purchase decision"
+    },
+    "financialReporting": {
+      "title": "Financial Reporting",
+      "description": "Transparent system for accounting for revenues, expenses, and commissions"
+    }
+  },
+  "demo": {
+    "title": "Capabilities Demonstration",
+    "subtitle": "See what your storefront will look like",
+    "catalogDemo": "Catalog Demo",
+    "storeDemo": "Store Demo",
+    "watchDemo": "Watch Demo"
+  },
+  "contact": {
+    "title": "Become a Dealer Today",
+    "subtitle": "Fill out the form and our manager will contact you shortly",
+    "contactUs": "Contact Us",
+    "contactDescription": "Ready to start a partnership or have questions? Our team is always ready to help you.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "123 Door Street, Toronto, ON, Canada",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Smith",
+      "company": "Company",
+      "companyPlaceholder": "Doors Inc.",
+      "email": "Email",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+1 (123) 456-7890",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your business and region",
+      "submit": "Submit Request"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 DoorPartner. All rights reserved."
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français"
+  }
+}

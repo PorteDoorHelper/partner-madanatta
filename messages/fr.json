@@ -1,0 +1,117 @@
+{
+  "header": {
+    "title": "DoorPartner",
+    "benefits": "Avantages",
+    "storefront": "Vitrine",
+    "dashboard": "Tableau de bord",
+    "contact": "Contact",
+    "becomeDealer": "Devenir Concessionnaire"
+  },
+  "hero": {
+    "title": "Devenez concessionnaire de portes intérieures haut de gamme au Canada",
+    "subtitle": "Obtenez une boutique en ligne personnalisée prête à l'emploi sans besoin de maintenance technique",
+    "startPartnership": "Commencer le Partenariat",
+    "viewDemo": "Voir la Démo"
+  },
+  "benefits": {
+    "title": "Avantages de la Concession",
+    "subtitle": "Nous offrons une solution complètement prête pour votre entreprise",
+    "brandedStorefront": {
+      "title": "Vitrine Personnalisée",
+      "description": "Catalogue ou boutique en ligne entièrement personnalisés avec votre logo et vos coordonnées"
+    },
+    "salesAutomation": {
+      "title": "Automatisation des Ventes",
+      "description": "Les clients peuvent effectuer des achats en ligne sans votre implication dans la maintenance du site"
+    },
+    "analyticalDashboard": {
+      "title": "Tableau de Bord Analytique",
+      "description": "Suivez les ventes, les vues et d'autres statistiques importantes en temps réel"
+    },
+    "whatYouGet": "Ce que Vous Obtenez",
+    "benefits": {
+      "readyStore": "Boutique en ligne prête à l'emploi",
+      "branding": "Image de marque pour votre entreprise",
+      "support": "Support technique 24/7",
+      "catalogUpdates": "Mises à jour régulières du catalogue",
+      "marketingMaterials": "Matériel marketing",
+      "staffTraining": "Formation du personnel",
+      "analyticalDashboard": "Tableau de bord analytique",
+      "crmIntegration": "Intégration avec systèmes CRM"
+    }
+  },
+  "storefront": {
+    "title": "Votre Vitrine Personnelle",
+    "subtitle": "Choisissez le format qui vous convient",
+    "productCatalog": {
+      "title": "Catalogue de Produits",
+      "description": "Catalogue informatif avec descriptions détaillées de tous les modèles de portes, matériaux et options de finition",
+      "viewDemo": "Voir la Démo du Catalogue"
+    },
+    "onlineStore": {
+      "title": "Boutique en Ligne",
+      "description": "Boutique en ligne complète avec commande en ligne, paiement et suivi de livraison",
+      "viewDemo": "Voir la Démo de la Boutique"
+    },
+    "personalization": {
+      "title": "Personnalisation",
+      "description": "Chaque vitrine est personnalisée individuellement pour votre marque:",
+      "logo": "Votre logo et couleurs de marque",
+      "contactInfo": "Vos coordonnées",
+      "promotions": "Promotions et offres individuelles",
+      "regionalFeatures": "Caractéristiques et prix régionaux"
+    }
+  },
+  "dashboard": {
+    "title": "Tableau de Bord Analytique",
+    "subtitle": "Contrôle complet de votre entreprise",
+    "salesStatistics": {
+      "title": "Statistiques de Ventes",
+      "description": "Suivez les ventes en temps réel, analysez les tendances et la saisonnalité"
+    },
+    "customerBehavior": {
+      "title": "Comportement des Clients",
+      "description": "Découvrez quels modèles de portes sont les plus consultés et ce qui influence la décision d'achat"
+    },
+    "financialReporting": {
+      "title": "Rapports Financiers",
+      "description": "Système transparent pour comptabiliser les revenus, les dépenses et les commissions"
+    }
+  },
+  "demo": {
+    "title": "Démonstration des Capacités",
+    "subtitle": "Voyez à quoi ressemblera votre vitrine",
+    "catalogDemo": "Démo du Catalogue",
+    "storeDemo": "Démo de la Boutique",
+    "watchDemo": "Regarder la Démo"
+  },
+  "contact": {
+    "title": "Devenez Concessionnaire Aujourd'hui",
+    "subtitle": "Remplissez le formulaire et notre responsable vous contactera sous peu",
+    "contactUs": "Contactez-Nous",
+    "contactDescription": "Prêt à commencer un partenariat ou avez-vous des questions? Notre équipe est toujours prête à vous aider.",
+    "phone": "Téléphone",
+    "email": "Courriel",
+    "address": "123 Rue des Portes, Toronto, ON, Canada",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Jean Tremblay",
+      "company": "Entreprise",
+      "companyPlaceholder": "Portes Inc.",
+      "email": "Courriel",
+      "emailPlaceholder": "jean@exemple.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+1 (123) 456-7890",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre entreprise et de votre région",
+      "submit": "Envoyer la Demande"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 DoorPartner. Tous droits réservés."
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français"
+  }
+}
