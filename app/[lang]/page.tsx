@@ -29,7 +29,7 @@ export default async function Home({
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image src="/hero-banner.png" alt="Modern interior" fill priority className="object-cover brightness-50" />
-        <div className="container relative z-10 text-center px-4 py-12 md:py-24">
+        <div className="container relative z-10 text-center px-4 py-12 md:py-16">
           <div className="flex flex-col items-center justify-center space-y-8">
             <div className="mb-4">
               <Image
@@ -40,7 +40,6 @@ export default async function Home({
                 className="h-auto mx-auto"
                 priority
               />
-              <p className="text-primary text-xs italic mt-1">La Référence</p>
             </div>
             <h1 className="font-bebas text-4xl md:text-5xl lg:text-6xl uppercase tracking-wider">
               {dictionary.hero.title}
