@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import Image from "next/image"
 import { Phone } from "lucide-react"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { MobileMenu } from "@/components/mobile-menu"
@@ -38,14 +39,30 @@ export function Header({ currentLocale, dictionary }: HeaderProps) {
   }, [])
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between">
+    <header
+      className={cn(
+        "sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-300",
+        isAtTop ? "h-20" : "h-16",
+      )}
+    >
+      <div
+        className={cn(
+          "container flex items-center justify-between transition-all duration-300",
+          isAtTop ? "h-20" : "h-16",
+        )}
+      >
         <div className="flex items-center gap-4">
           <MobileMenu dictionary={dictionary} />
-          <Link href={`/${currentLocale}`} className="flex items-center gap-2">
-            <div className="flex flex-col">
-              <span className="font-bebas text-3xl tracking-wider">MADANATTA</span>
-              <span className="text-primary text-xs italic -mt-1">La Référence</span>
+          <Link href={`/${currentLocale}`} className="flex items-center">
+            <div className="flex items-center justify-center">
+              <Image
+                src="/modanatto-logo.webp"
+                alt="Modanatto"
+                width={isAtTop ? 180 : 140}
+                height={isAtTop ? 40 : 30}
+                className="h-auto transition-all duration-300"
+                priority
+              />
             </div>
           </Link>
         </div>
@@ -54,7 +71,7 @@ export function Header({ currentLocale, dictionary }: HeaderProps) {
           <Link
             href={`/${currentLocale}`}
             className={cn(
-              "text-base font-semibold font-bebas uppercase tracking-wider transition-colors",
+              "text-base font-normal font-barlow uppercase tracking-[0.48px] leading-6 px-2.5 transition-colors duration-200 ease-out",
               isActive("") ? "text-primary" : "hover:text-primary",
             )}
           >
@@ -63,7 +80,7 @@ export function Header({ currentLocale, dictionary }: HeaderProps) {
           <Link
             href={`/${currentLocale}/products`}
             className={cn(
-              "text-base font-semibold font-bebas uppercase tracking-wider transition-colors",
+              "text-base font-normal font-barlow uppercase tracking-[0.48px] leading-6 px-2.5 transition-colors duration-200 ease-out",
               isActive("/products") ? "text-primary" : "hover:text-primary",
             )}
           >
@@ -72,7 +89,7 @@ export function Header({ currentLocale, dictionary }: HeaderProps) {
           <Link
             href={`/${currentLocale}/gallery`}
             className={cn(
-              "text-base font-semibold font-bebas uppercase tracking-wider transition-colors",
+              "text-base font-normal font-barlow uppercase tracking-[0.48px] leading-6 px-2.5 transition-colors duration-200 ease-out",
               isActive("/gallery") ? "text-primary" : "hover:text-primary",
             )}
           >
@@ -81,7 +98,7 @@ export function Header({ currentLocale, dictionary }: HeaderProps) {
           <Link
             href={`/${currentLocale}/contact`}
             className={cn(
-              "text-base font-semibold font-bebas uppercase tracking-wider transition-colors",
+              "text-base font-normal font-barlow uppercase tracking-[0.48px] leading-6 px-2.5 transition-colors duration-200 ease-out",
               isActive("/contact") ? "text-primary" : "hover:text-primary",
             )}
           >
@@ -91,7 +108,7 @@ export function Header({ currentLocale, dictionary }: HeaderProps) {
             href={`${process.env.NEXT_PUBLIC_DOOR_CATALOG_URL}/${currentLocale}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-base font-semibold font-bebas uppercase tracking-wider hover:text-primary transition-colors"
+            className="text-base font-normal font-barlow uppercase tracking-[0.48px] leading-6 px-2.5 transition-colors duration-200 ease-out hover:text-primary"
           >
             {dictionary.common.interiordoors}
           </a>

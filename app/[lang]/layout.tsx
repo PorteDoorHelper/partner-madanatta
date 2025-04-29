@@ -8,6 +8,7 @@ import { notFound } from "next/navigation"
 import { Header } from "@/components/header"
 import { SocialIcons } from "@/components/social-icons"
 import Link from "next/link"
+import Image from "next/image"
 
 // Используем шрифт Barlow вместо Montserrat
 const barlow = Barlow({
@@ -82,10 +83,10 @@ export default async function LocaleLayout({
               <div className="container px-4 md:px-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div className="space-y-4">
-                    <h3 className="text-xl font-bebas uppercase tracking-wider">
-                      MODANATTO
-                      <span className="text-primary text-sm italic font-normal block -mt-1">La Référence</span>
-                    </h3>
+                    <div className="flex flex-col">
+                      <Image src="/modanatto-logo.webp" alt="Modanatto" width={120} height={30} className="h-auto" />
+                      <span className="text-primary text-xs italic -mt-1">La Référence</span>
+                    </div>
                     <p className="text-muted-foreground">{dictionary.about.description.substring(0, 120)}...</p>
                     <div className="flex items-center gap-4 pt-2">
                       <SocialIcons />
