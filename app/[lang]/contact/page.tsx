@@ -27,7 +27,7 @@ export default async function ContactPage({
   return (
     <>
       <section className="relative h-[40vh] flex items-center justify-center overflow-hidden">
-        <Image src="/showroom.png" alt="Modanatto Showroom" fill priority className="object-cover brightness-50" />
+        <Image src="/showroom.png" alt="Doorshop1 Showroom" fill priority className="object-cover brightness-50" />
         <div className="container relative z-10 text-center px-4">
           <h1 className="font-bebas text-4xl md:text-5xl uppercase tracking-wider">{dictionary.contact.title}</h1>
           <p className="max-w-[700px] mx-auto mt-4 text-muted-foreground md:text-xl">{dictionary.contact.subtitle}</p>

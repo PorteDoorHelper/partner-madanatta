@@ -33,8 +33,8 @@ export default async function Home({
           <div className="flex flex-col items-center justify-center space-y-8">
             <div className="mb-4">
               <Image
-                src="/modanatto-logo.webp"
-                alt="Modanatto"
+                src="/doorshop1-logo.webp"
+                alt="Doorshop1"
                 width={160}
                 height={40}
                 className="h-auto mx-auto"
@@ -102,7 +102,7 @@ export default async function Home({
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <Image src="/showroom.png" alt="About Modanatto" width={800} height={600} className="rounded-md" />
+              <Image src="/showroom.png" alt="About Doorshop1" width={800} height={600} className="rounded-md" />
             </div>
             <div className="space-y-6">
               <h2 className="font-bebas text-3xl md:text-4xl uppercase tracking-wider">{dictionary.about.title}</h2>

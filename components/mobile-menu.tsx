@@ -32,7 +32,7 @@ export function MobileMenu({ dictionary }: MobileMenuProps) {
         <SheetHeader>
           <SheetTitle className="flex flex-col items-center">
             <div className="flex items-center justify-center">
-              <Image src="/modanatto-logo.webp" alt="Modanatto" width={150} height={35} className="h-auto" priority />
+              <Image src="/doorshop1-logo.webp" alt="Doorshop1" width={150} height={35} className="h-auto" priority />
             </div>
             <span className="text-primary text-xs italic -mt-1">La Référence</span>
           </SheetTitle>

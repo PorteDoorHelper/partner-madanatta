@@ -41,7 +41,7 @@ export async function generateMetadata({
 
   if (!locales.includes(lang)) {
     return {
-      title: "Modanatto - Premium Finishing Products in Laval, Canada",
+      title: "Doorshop1 - Premium Finishing Products in Laval, Canada",
       description:
         "Sale and installation of high-quality finishing products for your interior design projects in Laval and surrounding areas",
     }
@@ -50,7 +50,7 @@ export async function generateMetadata({
   const dictionary = await getDictionary(lang)
 
   return {
-    title: "Modanatto - " + dictionary.hero.title,
+    title: "Doorshop1 - " + dictionary.hero.title,
     description: dictionary.hero.subtitle,
   }
 }
@@ -84,7 +84,7 @@ export default async function LocaleLayout({
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div className="space-y-4">
                     <div className="flex flex-col">
-                      <Image src="/modanatto-logo.webp" alt="Modanatto" width={120} height={30} className="h-auto" />
+                      <Image src="/doorshop1-logo.webp" alt="Doorshop1" width={120} height={30} className="h-auto" />
                       <span className="text-primary text-xs italic -mt-1">La Référence</span>
                     </div>
                     <p className="text-muted-foreground">{dictionary.about.description.substring(0, 120)}...</p>

@@ -56,8 +56,8 @@ export function Header({ currentLocale, dictionary }: HeaderProps) {
           <Link href={`/${currentLocale}`} className="flex items-center">
             <div className="flex items-center justify-center">
               <Image
-                src="/modanatto-logo.webp"
-                alt="Modanatto"
+                src="/doorshop1-logo.webp"
+                alt="Doorshop1"
                 width={isAtTop ? 180 : 140}
                 height={isAtTop ? 40 : 30}
                 className="h-auto transition-all duration-300"

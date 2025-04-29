@@ -1,6 +1,6 @@
 {
   "header": {
-    "title": "Modanatto",
+    "title": "Doorshop1",
     "home": "Home",
     "products": "Our Products",
     "careers": "Careers",
@@ -74,7 +74,7 @@
         "category": "Commercial"
       },
       {
-        "title": "Modanatto Showroom",
+        "title": "Doorshop1 Showroom",
         "description": "Our modern showroom featuring various materials",
         "category": "Showroom"
       },
@@ -86,8 +86,8 @@
     ]
   },
   "about": {
-    "title": "About Modanatto",
-    "description": "Modanatto has been a leader in the sale and installation of finishing products since 1995. Our expertise and commitment to quality have made us the reference in Laval and surrounding areas.",
+    "title": "About Doorshop1",
+    "description": "Doorshop1 has been a leader in the sale and installation of finishing products since 1995. Our expertise and commitment to quality have made us the reference in Laval and surrounding areas.",
     "features": [
       "Premium quality products from trusted manufacturers",
       "Professional installation services",
@@ -127,10 +127,10 @@
     "interiordoors": "Interior Doors"
   },
   "footer": {
-    "copyright": "© 2025 Modanatto. All rights reserved.",
+    "copyright": "© 2025 Doorshop1. All rights reserved.",
     "address": "123 Example Street, Laval, QC, Canada",
     "phone": "123-456-7890",
-    "email": "info@modanatto.com"
+    "email": "info@doorshop1.com"
   },
   "language": {
     "en": "English",
