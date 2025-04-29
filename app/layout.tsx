@@ -10,9 +10,8 @@ export default function RootLayout({ children }: Props) {
   return children
 }
 
-
-import './globals.css'
+import "./globals.css"
 
 export const metadata = {
-      generator: 'v0.dev'
-    };
+  generator: "v0.dev",
+}

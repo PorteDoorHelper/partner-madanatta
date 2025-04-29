@@ -4,7 +4,6 @@ import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { Globe } from "lucide-react"
 import type { Locale, Dictionary } from "@/lib/i18n"
 
 interface LanguageSwitcherProps {
@@ -29,16 +28,27 @@ export function LanguageSwitcher({ currentLocale, dictionary }: LanguageSwitcher
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="h-9 w-9 rounded-full">
-          <Globe className="h-5 w-5" />
-          <span className="sr-only">Switch language</span>
+        <Button
+          variant="ghost"
+          size="sm"
+          className="uppercase font-semibold text-base text-primary hover:underline transition-all"
+        >
+          {currentLocale === "en" ? "EN" : "FR"}
+          <span className="mx-1">/</span>
+          {currentLocale === "en" ? "FR" : "EN"}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => switchLanguage("en")} className={currentLocale === "en" ? "bg-muted" : ""}>
+        <DropdownMenuItem
+          onClick={() => switchLanguage("en")}
+          className={currentLocale === "en" ? "bg-muted text-primary font-semibold" : ""}
+        >
           English
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => switchLanguage("fr")} className={currentLocale === "fr" ? "bg-muted" : ""}>
+        <DropdownMenuItem
+          onClick={() => switchLanguage("fr")}
+          className={currentLocale === "fr" ? "bg-muted text-primary font-semibold" : ""}
+        >
           Français
         </DropdownMenuItem>
       </DropdownMenuContent>

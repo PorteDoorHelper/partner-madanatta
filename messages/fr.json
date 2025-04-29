@@ -1,17 +1,17 @@
 {
   "header": {
-    "title": "DoorPartner",
-    "benefits": "Avantages",
-    "storefront": "Vitrine",
-    "dashboard": "Tableau de bord",
-    "contact": "Contact",
-    "becomeDealer": "Devenir Concessionnaire"
+    "title": "Modanatto",
+    "home": "Accueil",
+    "products": "Nos Produits",
+    "careers": "Carrières",
+    "contact": "Contactez-Nous",
+    "gallery": "Galerie",
+    "menuDescription": "Naviguez à travers notre site"
   },
   "hero": {
-    "title": "Devenez concessionnaire de portes intérieures haut de gamme au Canada",
-    "subtitle": "Obtenez une boutique en ligne personnalisée prête à l'emploi sans besoin de maintenance technique",
-    "startPartnership": "Commencer le Partenariat",
-    "viewDemo": "Voir la Démo"
+    "title": "Vente et Installation",
+    "subtitle": "Produits de Finition",
+    "location": "Laval et aux Environs"
   },
   "benefits": {
     "title": "Avantages de la Concession",
@@ -85,9 +85,106 @@
     "storeDemo": "Démo de la Boutique",
     "watchDemo": "Regarder la Démo"
   },
+  "products": {
+    "title": "Nos Produits",
+    "subtitle": "Découvrez notre large gamme de produits de finition de haute qualité pour vos projets de design intérieur",
+    "items": [
+      {
+        "title": "Carreaux de Céramique",
+        "description": "Carreaux de céramique et de porcelaine haut de gamme pour sols et murs",
+        "image": "ceramic tiles showroom"
+      },
+      {
+        "title": "Planchers de Bois Franc",
+        "description": "Options élégantes de planchers de bois franc pour tout style d'intérieur",
+        "image": "hardwood flooring samples"
+      },
+      {
+        "title": "Revêtements de Sol en Vinyle",
+        "description": "Solutions de revêtements de sol en vinyle durables et élégantes",
+        "image": "vinyl flooring display"
+      },
+      {
+        "title": "Moulures",
+        "description": "Moulures décoratives pour améliorer votre design intérieur",
+        "image": "decorative mouldings"
+      },
+      {
+        "title": "Portes",
+        "description": "Portes intérieures avec différents designs et finitions",
+        "image": "interior doors display"
+      },
+      {
+        "title": "Accessoires de Salle de Bain",
+        "description": "Accessoires et équipements modernes pour salle de bain",
+        "image": "bathroom fixtures showroom"
+      }
+    ]
+  },
+  "installation": {
+    "title": "Installation Professionnelle",
+    "description": "Notre équipe de spécialistes expérimentés assure une installation impeccable de tous types de matériaux de finition. Nous garantissons un travail de haute qualité et le respect des délais pour que votre projet soit parfaitement réalisé.",
+    "features": [
+      "Installation professionnelle de carreaux et de grès cérame",
+      "Installation de revêtements de sol de toute complexité",
+      "Installation de portes et d'éléments décoratifs",
+      "Garantie sur tous les types de travaux"
+    ]
+  },
+  "gallery": {
+    "title": "Galerie de Projets",
+    "subtitle": "Explorez nos projets réalisés et inspirez-vous pour votre prochaine rénovation",
+    "projects": [
+      {
+        "title": "Cuisine Moderne",
+        "description": "Dosseret en carreaux premium et plancher en bois franc dans une cuisine contemporaine",
+        "category": "Cuisine"
+      },
+      {
+        "title": "Salle de Bain Élégante",
+        "description": "Travail de carrelage luxueux et accessoires modernes",
+        "category": "Salle de Bain"
+      },
+      {
+        "title": "Salon Moderne",
+        "description": "Plancher en bois franc premium et moulures élégantes",
+        "category": "Salon"
+      },
+      {
+        "title": "Espace de Bureau",
+        "description": "Bureau contemporain avec revêtement de sol en vinyle de luxe et portes en verre",
+        "category": "Commercial"
+      },
+      {
+        "title": "Showroom Modanatto",
+        "description": "Notre showroom moderne présentant divers matériaux",
+        "category": "Showroom"
+      },
+      {
+        "title": "Installation Professionnelle",
+        "description": "Nos spécialistes au travail",
+        "category": "Installation"
+      }
+    ]
+  },
+  "about": {
+    "title": "À Propos de Modanatto",
+    "description": "Modanatto est un leader dans la vente et l'installation de produits de finition depuis 1995. Notre expertise et notre engagement envers la qualité ont fait de nous la référence à Laval et dans les environs.",
+    "features": [
+      "Produits de qualité supérieure de fabricants de confiance",
+      "Services d'installation professionnels",
+      "Conseils d'experts de notre équipe expérimentée",
+      "Prix compétitifs et offres spéciales",
+      "Vaste salle d'exposition avec les dernières tendances",
+      "Service après-vente et support"
+    ]
+  },
   "contact": {
-    "title": "Devenez Concessionnaire Aujourd'hui",
-    "subtitle": "Remplissez le formulaire et notre responsable vous contactera sous peu",
+    "title": "Contactez-Nous",
+    "subtitle": "Entrez en contact avec notre équipe pour toute question ou pour demander un devis",
+    "ctaTitle": "Prêt à Commencer Votre Projet?",
+    "ctaText": "Contactez notre équipe dès aujourd'hui pour discuter des besoins de votre projet et obtenir une consultation gratuite",
+    "ctaButton": "Contactez-Nous Maintenant",
     "contactUs": "Contactez-Nous",
     "contactDescription": "Prêt à commencer un partenariat ou avez-vous des questions? Notre équipe est toujours prête à vous aider.",
     "phone": "Téléphone",
@@ -104,11 +201,19 @@
       "phonePlaceholder": "+1 (123) 456-7890",
       "message": "Message",
       "messagePlaceholder": "Parlez-nous de votre entreprise et de votre région",
-      "submit": "Envoyer la Demande"
+      "submit": "Envoyer le Message"
     }
   },
+  "common": {
+    "learnMore": "En Savoir Plus",
+    "viewAll": "Voir Tous les Produits",
+    "interiordoors": "Portes Intérieures"
+  },
   "footer": {
-    "copyright": "© 2025 DoorPartner. Tous droits réservés."
+    "copyright": "© 2025 Modanatto. Tous droits réservés.",
+    "address": "123 Rue Exemple, Laval, QC, Canada",
+    "phone": "123-456-7890",
+    "email": "info@modanatto.com"
   },
   "language": {
     "en": "English",

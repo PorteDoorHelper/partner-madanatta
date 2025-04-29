@@ -4,41 +4,42 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 353 95% 51%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 353 95% 51%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
 
     /* Добавляем кастомные CSS переменные */
-    --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-      sans-serif;
+    --font-bebas: "Bebas Neue", sans-serif;
+    --font-barlow: "Barlow", "Barlow Fallback", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
     --container-width: 1400px;
-    --header-height: 4rem;
+    --header-height: 5rem;
     --footer-height: 4rem;
     --transition-fast: 150ms;
     --transition-normal: 300ms;
@@ -46,33 +47,33 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 353 95% 51%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.5% 48%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 353 95% 51%;
   }
 }
 
@@ -93,19 +94,19 @@
   }
 
   .heading-1 {
-    @apply text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl;
+    @apply text-4xl font-bebas tracking-tight md:text-5xl lg:text-6xl;
   }
 
   .heading-2 {
-    @apply text-3xl font-bold tracking-tight md:text-4xl;
+    @apply text-3xl font-bebas tracking-tight md:text-4xl;
   }
 
   .heading-3 {
-    @apply text-2xl font-bold tracking-tight md:text-3xl;
+    @apply text-2xl font-bebas tracking-tight md:text-3xl;
   }
 
   .heading-4 {
-    @apply text-xl font-bold tracking-tight md:text-2xl;
+    @apply text-xl font-bebas tracking-tight md:text-2xl;
   }
 
   .paragraph {
@@ -118,5 +119,43 @@
 
   .section {
     @apply py-12 md:py-16 lg:py-24;
+  }
+
+  .hero-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bebas uppercase tracking-wide text-center;
+  }
+
+  .hero-subtitle {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bebas uppercase tracking-wide text-center;
+  }
+
+  .hero-location {
+    @apply text-xl md:text-2xl font-bebas uppercase tracking-wide text-center mt-4;
+  }
+
+  .red-underline {
+    @apply relative inline-block;
+  }
+
+  .red-underline::after {
+    content: "";
+    @apply absolute bottom-0 left-1/2 w-3/4 h-0.5 bg-primary transform -translate-x-1/2;
+  }
+
+  .font-bebas {
+    font-family: var(--font-bebas);
+  }
+
+  .font-barlow {
+    font-family: var(--font-barlow);
+  }
+
+  /* Плавная анимация для хедера */
+  .header-element-show {
+    @apply opacity-100 max-w-[200px] transition-all duration-300 ease-in-out;
+  }
+
+  .header-element-hide {
+    @apply opacity-0 max-w-0 transition-all duration-300 ease-in-out overflow-hidden;
   }
 }

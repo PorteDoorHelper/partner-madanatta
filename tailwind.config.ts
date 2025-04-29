@@ -20,6 +20,10 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        bebas: ["var(--font-bebas)"],
+        barlow: ["var(--font-barlow)"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -60,11 +64,6 @@ const config: Config = {
           light: theme.colors.primary.light,
           dark: theme.colors.primary.dark,
         },
-      },
-      fontFamily: {
-        sans: theme.typography.fontFamily.sans,
-        serif: theme.typography.fontFamily.serif,
-        mono: theme.typography.fontFamily.mono,
       },
       borderRadius: {
         lg: "var(--radius)",

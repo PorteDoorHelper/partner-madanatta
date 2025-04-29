@@ -1,9 +1,9 @@
 // Основные цвета темы
 export const colors = {
   primary: {
-    DEFAULT: "#0070f3", // Основной цвет бренда
-    light: "#3291ff",
-    dark: "#0761d1",
+    DEFAULT: "rgba(247, 11, 36, 1)", // Обновленный красный цвет
+    light: "#f73d5b",
+    dark: "#d00a24",
   },
   secondary: {
     DEFAULT: "#7928ca",
@@ -33,9 +33,10 @@ export const colors = {
 // Настройки типографики
 export const typography = {
   fontFamily: {
-    sans: ["Inter", "sans-serif"],
+    sans: ["Barlow", "Barlow Fallback", "sans-serif"],
     serif: ["Georgia", "serif"],
     mono: ["Menlo", "Monaco", "Courier New", "monospace"],
+    bebas: ["Bebas Neue", "sans-serif"],
   },
   fontSize: {
     xs: "0.75rem",

@@ -1,114 +1,136 @@
 {
   "header": {
-    "title": "DoorPartner",
-    "benefits": "Benefits",
-    "storefront": "Storefront",
-    "dashboard": "Dashboard",
-    "contact": "Contact",
-    "becomeDealer": "Become a Dealer"
+    "title": "Modanatto",
+    "home": "Home",
+    "products": "Our Products",
+    "careers": "Careers",
+    "contact": "Contact Us",
+    "gallery": "Gallery",
+    "menuDescription": "Navigate through our site"
   },
   "hero": {
-    "title": "Become a Premium Interior Door Dealer in Canada",
-    "subtitle": "Get a ready-to-use branded online store without technical maintenance",
-    "startPartnership": "Start Partnership",
-    "viewDemo": "View Demo"
+    "title": "Sale and Installation",
+    "subtitle": "Finishing Products",
+    "location": "Laval and Surrounding Areas"
   },
-  "benefits": {
-    "title": "Dealership Benefits",
-    "subtitle": "We offer a completely ready solution for your business",
-    "brandedStorefront": {
-      "title": "Branded Storefront",
-      "description": "Fully customized catalog or online store with your logo and contact information"
-    },
-    "salesAutomation": {
-      "title": "Sales Automation",
-      "description": "Customers can make purchases online without your involvement in site maintenance"
-    },
-    "analyticalDashboard": {
-      "title": "Analytical Dashboard",
-      "description": "Track sales, views, and other important statistics in real-time"
-    },
-    "whatYouGet": "What You Get",
-    "benefits": {
-      "readyStore": "Ready-to-use online store",
-      "branding": "Branding for your business",
-      "support": "24/7 technical support",
-      "catalogUpdates": "Regular catalog updates",
-      "marketingMaterials": "Marketing materials",
-      "staffTraining": "Staff training",
-      "analyticalDashboard": "Analytical dashboard",
-      "crmIntegration": "CRM system integration"
-    }
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Discover our wide range of high-quality finishing products for your interior design projects",
+    "items": [
+      {
+        "title": "Ceramic Tiles",
+        "description": "Premium ceramic and porcelain tiles for floors and walls",
+        "image": "ceramic tiles showroom"
+      },
+      {
+        "title": "Hardwood Flooring",
+        "description": "Elegant hardwood flooring options for any interior style",
+        "image": "hardwood flooring samples"
+      },
+      {
+        "title": "Vinyl Flooring",
+        "description": "Durable and stylish vinyl flooring solutions",
+        "image": "vinyl flooring display"
+      },
+      {
+        "title": "Mouldings",
+        "description": "Decorative mouldings to enhance your interior design",
+        "image": "decorative mouldings"
+      },
+      {
+        "title": "Doors",
+        "description": "Interior doors with various designs and finishes",
+        "image": "interior doors display"
+      },
+      {
+        "title": "Bathroom Fixtures",
+        "description": "Modern bathroom fixtures and accessories",
+        "image": "bathroom fixtures showroom"
+      }
+    ]
   },
-  "storefront": {
-    "title": "Your Personal Storefront",
-    "subtitle": "Choose the format that suits you",
-    "productCatalog": {
-      "title": "Product Catalog",
-      "description": "Informative catalog with detailed descriptions of all door models, materials, and finishing options",
-      "viewDemo": "View Catalog Demo"
-    },
-    "onlineStore": {
-      "title": "Online Store",
-      "description": "Complete online store with online ordering, payment, and delivery tracking",
-      "viewDemo": "View Store Demo"
-    },
-    "personalization": {
-      "title": "Personalization",
-      "description": "Each storefront is individually customized for your brand:",
-      "logo": "Your logo and brand colors",
-      "contactInfo": "Your contact information",
-      "promotions": "Individual promotions and offers",
-      "regionalFeatures": "Regional features and prices"
-    }
+  "gallery": {
+    "title": "Project Gallery",
+    "subtitle": "Explore our completed projects and get inspired for your next renovation",
+    "projects": [
+      {
+        "title": "Modern Kitchen",
+        "description": "Premium tile backsplash and hardwood flooring in a contemporary kitchen",
+        "category": "Kitchen"
+      },
+      {
+        "title": "Elegant Bathroom",
+        "description": "Luxury tile work and modern fixtures",
+        "category": "Bathroom"
+      },
+      {
+        "title": "Modern Living Room",
+        "description": "Premium hardwood flooring and elegant mouldings",
+        "category": "Living Room"
+      },
+      {
+        "title": "Office Space",
+        "description": "Contemporary office with luxury vinyl flooring and glass doors",
+        "category": "Commercial"
+      },
+      {
+        "title": "Modanatto Showroom",
+        "description": "Our modern showroom featuring various materials",
+        "category": "Showroom"
+      },
+      {
+        "title": "Professional Installation",
+        "description": "Our specialists at work",
+        "category": "Installation"
+      }
+    ]
   },
-  "dashboard": {
-    "title": "Analytical Dashboard",
-    "subtitle": "Complete control over your business",
-    "salesStatistics": {
-      "title": "Sales Statistics",
-      "description": "Track sales in real-time, analyze trends and seasonality"
-    },
-    "customerBehavior": {
-      "title": "Customer Behavior",
-      "description": "Find out which door models are viewed most often and what influences the purchase decision"
-    },
-    "financialReporting": {
-      "title": "Financial Reporting",
-      "description": "Transparent system for accounting for revenues, expenses, and commissions"
-    }
+  "about": {
+    "title": "About Modanatto",
+    "description": "Modanatto has been a leader in the sale and installation of finishing products since 1995. Our expertise and commitment to quality have made us the reference in Laval and surrounding areas.",
+    "features": [
+      "Premium quality products from trusted manufacturers",
+      "Professional installation services",
+      "Expert advice from our experienced team",
+      "Competitive pricing and special offers",
+      "Extensive showroom with the latest trends",
+      "After-sales service and support"
+    ]
   },
-  "demo": {
-    "title": "Capabilities Demonstration",
-    "subtitle": "See what your storefront will look like",
-    "catalogDemo": "Catalog Demo",
-    "storeDemo": "Store Demo",
-    "watchDemo": "Watch Demo"
+  "installation": {
+    "title": "Professional Installation",
+    "description": "Our team of experienced specialists ensures flawless installation of all types of finishing materials. We guarantee high-quality work and adherence to deadlines to ensure your project is completed perfectly.",
+    "features": [
+      "Professional installation of tiles and porcelain stoneware",
+      "Installation of flooring of any complexity",
+      "Installation of doors and decorative elements",
+      "Warranty on all types of work"
+    ]
   },
   "contact": {
-    "title": "Become a Dealer Today",
-    "subtitle": "Fill out the form and our manager will contact you shortly",
-    "contactUs": "Contact Us",
-    "contactDescription": "Ready to start a partnership or have questions? Our team is always ready to help you.",
-    "phone": "Phone",
-    "email": "Email",
-    "address": "123 Door Street, Toronto, ON, Canada",
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team for any questions or to request a quote",
+    "ctaTitle": "Ready to Start Your Project?",
+    "ctaText": "Contact our team today to discuss your project needs and get a free consultation",
+    "ctaButton": "Contact Us Now",
     "form": {
       "name": "Name",
-      "namePlaceholder": "John Smith",
-      "company": "Company",
-      "companyPlaceholder": "Doors Inc.",
       "email": "Email",
-      "emailPlaceholder": "john@example.com",
       "phone": "Phone",
-      "phonePlaceholder": "+1 (123) 456-7890",
       "message": "Message",
-      "messagePlaceholder": "Tell us about your business and region",
-      "submit": "Submit Request"
+      "submit": "Send Message"
     }
   },
+  "common": {
+    "learnMore": "Learn More",
+    "viewAll": "View All Products",
+    "interiordoors": "Interior Doors"
+  },
   "footer": {
-    "copyright": "© 2025 DoorPartner. All rights reserved."
+    "copyright": "© 2025 Modanatto. All rights reserved.",
+    "address": "123 Example Street, Laval, QC, Canada",
+    "phone": "123-456-7890",
+    "email": "info@modanatto.com"
   },
   "language": {
     "en": "English",

@@ -1,89 +1,134 @@
-import type React from "react";
-import "@/app/globals.css";
-import { Inter } from "next/font/google";
-import { Store } from "lucide-react";
-import { ThemeProvider } from "@/components/theme-provider";
-import { getDictionary, type Locale, locales } from "@/lib/i18n";
-import { notFound } from "next/navigation";
-import { Header } from "@/components/header";
+import type React from "react"
+import "@/app/globals.css"
+import { Barlow, Bebas_Neue } from "next/font/google"
+import { Phone, Mail, MapPin } from "lucide-react"
+import { ThemeProvider } from "@/components/theme-provider"
+import { getDictionary, type Locale, locales } from "@/lib/i18n"
+import { notFound } from "next/navigation"
+import { Header } from "@/components/header"
+import { SocialIcons } from "@/components/social-icons"
+import Link from "next/link"
 
-// Используем шрифт из нашей темы
-const inter = Inter({
+// Используем шрифт Barlow вместо Montserrat
+const barlow = Barlow({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-barlow",
+})
+
+// Оставляем Bebas Neue для заголовков
+const bebasNeue = Bebas_Neue({
+  weight: ["400"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-sans",
-});
+  variable: "--font-bebas",
+})
 
 // Валидация параметров
 export async function generateStaticParams() {
-  return locales.map((lang) => ({ lang }));
+  return locales.map((lang) => ({ lang }))
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: { lang: Locale }
 }) {
   // Проверяем, что локаль поддерживается
-  const { lang } = await params;
+  const { lang } = params
 
   if (!locales.includes(lang)) {
     return {
-      title: "DoorPartner - Premium Interior Door Dealership in Canada",
+      title: "Modanatto - Premium Finishing Products in Laval, Canada",
       description:
-        "Become a dealer of premium interior doors in Canada with a ready-to-use branded online store",
-    };
+        "Sale and installation of high-quality finishing products for your interior design projects in Laval and surrounding areas",
+    }
   }
 
-  const dictionary = await getDictionary(lang);
+  const dictionary = await getDictionary(lang)
 
   return {
-    title: "DoorPartner - " + dictionary.hero.title,
+    title: "Modanatto - " + dictionary.hero.title,
     description: dictionary.hero.subtitle,
-  };
+  }
 }
 
 export default async function LocaleLayout({
   children,
   params,
 }: Readonly<{
-  children: React.ReactNode;
-  params: Promise<{ lang: Locale }>;
+  children: React.ReactNode
+  params: { lang: Locale }
 }>) {
-  // Получаем параметры асинхронно
-  const { lang } = await params;
+  // Получаем параметры
+  const lang = params.lang
 
   // Проверяем, что локаль поддерживается
   if (!locales.includes(lang)) {
-    notFound();
+    notFound()
   }
 
-  const dictionary = await getDictionary(lang);
+  const dictionary = await getDictionary(lang)
 
   return (
-    <html lang={lang} suppressHydrationWarning className={inter.variable}>
-      <body className="min-h-screen font-sans antialiased">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
+    <html lang={lang} suppressHydrationWarning className={`${bebasNeue.variable} ${barlow.variable}`}>
+      <body className="min-h-screen font-barlow antialiased">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <div className="flex flex-col min-h-screen">
             <Header currentLocale={lang} dictionary={dictionary} />
             <main className="flex-1">{children}</main>
-            <footer className="border-t py-6 md:py-10">
+            <footer className="border-t py-12">
               <div className="container px-4 md:px-6">
-                <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between">
-                  <div className="flex items-center gap-2">
-                    <Store className="h-6 w-6" />
-                    <span className="text-lg font-bold">
-                      {dictionary.header.title}
-                    </span>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-bebas uppercase tracking-wider">
+                      MODANATTO
+                      <span className="text-primary text-sm italic font-normal block -mt-1">La Référence</span>
+                    </h3>
+                    <p className="text-muted-foreground">{dictionary.about.description.substring(0, 120)}...</p>
+                    <div className="flex items-center gap-4 pt-2">
+                      <SocialIcons />
+                    </div>
                   </div>
-                  <p className="text-center text-sm text-muted-foreground md:text-left">
-                    {dictionary.footer.copyright}
-                  </p>
+
+                  <div className="space-y-4">
+                    <h3 className="text-lg font-bebas uppercase">{dictionary.header.products}</h3>
+                    <ul className="space-y-2">
+                      {dictionary.products.items.slice(0, 4).map((product, index) => (
+                        <li key={index}>
+                          <Link
+                            href={`/${lang}/products/${product.title.toLowerCase().replace(/\s+/g, "-")}`}
+                            className="text-muted-foreground hover:text-primary transition-colors"
+                          >
+                            {product.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-lg font-bebas uppercase">{dictionary.contact.title}</h3>
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <MapPin className="h-5 w-5 text-primary mr-2 mt-0.5" />
+                        <span>{dictionary.footer.address}</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Phone className="h-5 w-5 text-primary mr-2 mt-0.5" />
+                        <span>123-456-7890</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Mail className="h-5 w-5 text-primary mr-2 mt-0.5" />
+                        <span>{dictionary.footer.email}</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
+                  {dictionary.footer.copyright}
                 </div>
               </div>
             </footer>
@@ -91,5 +136,5 @@ export default async function LocaleLayout({
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
