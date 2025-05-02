@@ -106,7 +106,7 @@ export function Header({ currentLocale, dictionary }: HeaderProps) {
           </Link>
           <a
             href={`${process.env.NEXT_PUBLIC_DOOR_CATALOG_URL}/${currentLocale}`}
-            target="_blank"
+            rel="noopener noreferrer"
             className="text-base font-normal font-barlow uppercase tracking-[0.48px] leading-6 px-2.5 transition-colors duration-200 ease-out hover:text-primary"
           >
             {dictionary.common.interiordoors}
